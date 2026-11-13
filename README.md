@@ -8,6 +8,7 @@
 
 - **`dfcore`**: Shared forensic safety core for the df tools (protected-device registry `dfcore-protect`, hash-chained audit log `dfcore-audit`). Dual-licensed under MIT OR Apache-2.0.
 - **`dfdisk`**: Modern forensic disk imaging, damaged media rescue and conversion CLI/TUI tool. Dual-licensed under MIT OR Apache-2.0.
+- **`matrix-rat`**: A mouse-friendly, themeable [Matrix](https://matrix.org) client for the terminal. Apache-2.0.
 
 ## Binary cache
 
