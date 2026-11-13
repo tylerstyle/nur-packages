@@ -48,5 +48,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     maintainers = with lib.maintainers; [ ] ++ lib.optionals (lib.maintainers ? tylerstyle) [ lib.maintainers.tylerstyle ];
     mainProgram = "matrix-rat";
     platforms = lib.platforms.linux;
+    # matrix-sdk 0.19 needs Rust 1.96 (rust-version in Cargo.toml); nixos-26.05 ships 1.95
+    broken = lib.versionOlder rustPlatform.rust.rustc.version "1.96";
   };
 })
